@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96219CF02A3B1206005FDEB8 /* App_Wecker_v4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219CEF2A3B1206005FDEB8 /* App_Wecker_v4App.swift */; };
+		96219CF22A3B1206005FDEB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219CF12A3B1206005FDEB8 /* ContentView.swift */; };
+		96219CF42A3B1207005FDEB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96219CF32A3B1207005FDEB8 /* Assets.xcassets */; };
+		96219CF72A3B1207005FDEB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96219CF62A3B1207005FDEB8 /* Preview Assets.xcassets */; };
+		96219D012A3B1208005FDEB8 /* App_Wecker_v4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219D002A3B1208005FDEB8 /* App_Wecker_v4Tests.swift */; };
+		96219D0B2A3B1208005FDEB8 /* App_Wecker_v4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219D0A2A3B1208005FDEB8 /* App_Wecker_v4UITests.swift */; };
+		96219D0D2A3B1208005FDEB8 /* App_Wecker_v4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219D0C2A3B1208005FDEB8 /* App_Wecker_v4UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96219CFD2A3B1208005FDEB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96219CE42A3B1206005FDEB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96219CEB2A3B1206005FDEB8;
+			remoteInfo = "App-Wecker-v4";
+		};
+		96219D072A3B1208005FDEB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96219CE42A3B1206005FDEB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96219CEB2A3B1206005FDEB8;
+			remoteInfo = "App-Wecker-v4";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96219CEC2A3B1206005FDEB8 /* App-Wecker-v4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-Wecker-v4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96219CEF2A3B1206005FDEB8 /* App_Wecker_v4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Wecker_v4App.swift; sourceTree = "<group>"; };
+		96219CF12A3B1206005FDEB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96219CF32A3B1207005FDEB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96219CF62A3B1207005FDEB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96219CFC2A3B1208005FDEB8 /* App-Wecker-v4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App-Wecker-v4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96219D002A3B1208005FDEB8 /* App_Wecker_v4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Wecker_v4Tests.swift; sourceTree = "<group>"; };
+		96219D062A3B1208005FDEB8 /* App-Wecker-v4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App-Wecker-v4UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96219D0A2A3B1208005FDEB8 /* App_Wecker_v4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Wecker_v4UITests.swift; sourceTree = "<group>"; };
+		96219D0C2A3B1208005FDEB8 /* App_Wecker_v4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Wecker_v4UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96219CE92A3B1206005FDEB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96219CF92A3B1208005FDEB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96219D032A3B1208005FDEB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96219CE32A3B1206005FDEB8 = {
+			isa = PBXGroup;
+			children = (
+				96219CEE2A3B1206005FDEB8 /* App-Wecker-v4 */,
+				96219CFF2A3B1208005FDEB8 /* App-Wecker-v4Tests */,
+				96219D092A3B1208005FDEB8 /* App-Wecker-v4UITests */,
+				96219CED2A3B1206005FDEB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96219CED2A3B1206005FDEB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96219CEC2A3B1206005FDEB8 /* App-Wecker-v4.app */,
+				96219CFC2A3B1208005FDEB8 /* App-Wecker-v4Tests.xctest */,
+				96219D062A3B1208005FDEB8 /* App-Wecker-v4UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96219CEE2A3B1206005FDEB8 /* App-Wecker-v4 */ = {
+			isa = PBXGroup;
+			children = (
+				96219CEF2A3B1206005FDEB8 /* App_Wecker_v4App.swift */,
+				96219CF12A3B1206005FDEB8 /* ContentView.swift */,
+				96219CF32A3B1207005FDEB8 /* Assets.xcassets */,
+				96219CF52A3B1207005FDEB8 /* Preview Content */,
+			);
+			path = "App-Wecker-v4";
+			sourceTree = "<group>";
+		};
+		96219CF52A3B1207005FDEB8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				96219CF62A3B1207005FDEB8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96219CFF2A3B1208005FDEB8 /* App-Wecker-v4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				96219D002A3B1208005FDEB8 /* App_Wecker_v4Tests.swift */,
+			);
+			path = "App-Wecker-v4Tests";
+			sourceTree = "<group>";
+		};
+		96219D092A3B1208005FDEB8 /* App-Wecker-v4UITests */ = {
+			isa = PBXGroup;
+			children = (
+				96219D0A2A3B1208005FDEB8 /* App_Wecker_v4UITests.swift */,
+				96219D0C2A3B1208005FDEB8 /* App_Wecker_v4UITestsLaunchTests.swift */,
+			);
+			path = "App-Wecker-v4UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96219CEB2A3B1206005FDEB8 /* App-Wecker-v4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96219D102A3B1208005FDEB8 /* Build configuration list for PBXNativeTarget "App-Wecker-v4" */;
+			buildPhases = (
+				96219CE82A3B1206005FDEB8 /* Sources */,
+				96219CE92A3B1206005FDEB8 /* Frameworks */,
+				96219CEA2A3B1206005FDEB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "App-Wecker-v4";
+			productName = "App-Wecker-v4";
+			productReference = 96219CEC2A3B1206005FDEB8 /* App-Wecker-v4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96219CFB2A3B1208005FDEB8 /* App-Wecker-v4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96219D132A3B1208005FDEB8 /* Build configuration list for PBXNativeTarget "App-Wecker-v4Tests" */;
+			buildPhases = (
+				96219CF82A3B1208005FDEB8 /* Sources */,
+				96219CF92A3B1208005FDEB8 /* Frameworks */,
+				96219CFA2A3B1208005FDEB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96219CFE2A3B1208005FDEB8 /* PBXTargetDependency */,
+			);
+			name = "App-Wecker-v4Tests";
+			productName = "App-Wecker-v4Tests";
+			productReference = 96219CFC2A3B1208005FDEB8 /* App-Wecker-v4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96219D052A3B1208005FDEB8 /* App-Wecker-v4UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96219D162A3B1208005FDEB8 /* Build configuration list for PBXNativeTarget "App-Wecker-v4UITests" */;
+			buildPhases = (
+				96219D022A3B1208005FDEB8 /* Sources */,
+				96219D032A3B1208005FDEB8 /* Frameworks */,
+				96219D042A3B1208005FDEB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96219D082A3B1208005FDEB8 /* PBXTargetDependency */,
+			);
+			name = "App-Wecker-v4UITests";
+			productName = "App-Wecker-v4UITests";
+			productReference = 96219D062A3B1208005FDEB8 /* App-Wecker-v4UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96219CE42A3B1206005FDEB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					96219CEB2A3B1206005FDEB8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					96219CFB2A3B1208005FDEB8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 96219CEB2A3B1206005FDEB8;
+					};
+					96219D052A3B1208005FDEB8 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 96219CEB2A3B1206005FDEB8;
+					};
+				};
+			};
+			buildConfigurationList = 96219CE72A3B1206005FDEB8 /* Build configuration list for PBXProject "App-Wecker-v4" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96219CE32A3B1206005FDEB8;
+			productRefGroup = 96219CED2A3B1206005FDEB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96219CEB2A3B1206005FDEB8 /* App-Wecker-v4 */,
+				96219CFB2A3B1208005FDEB8 /* App-Wecker-v4Tests */,
+				96219D052A3B1208005FDEB8 /* App-Wecker-v4UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96219CEA2A3B1206005FDEB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96219CF72A3B1207005FDEB8 /* Preview Assets.xcassets in Resources */,
+				96219CF42A3B1207005FDEB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96219CFA2A3B1208005FDEB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96219D042A3B1208005FDEB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96219CE82A3B1206005FDEB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96219CF22A3B1206005FDEB8 /* ContentView.swift in Sources */,
+				96219CF02A3B1206005FDEB8 /* App_Wecker_v4App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96219CF82A3B1208005FDEB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96219D012A3B1208005FDEB8 /* App_Wecker_v4Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96219D022A3B1208005FDEB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96219D0B2A3B1208005FDEB8 /* App_Wecker_v4UITests.swift in Sources */,
+				96219D0D2A3B1208005FDEB8 /* App_Wecker_v4UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96219CFE2A3B1208005FDEB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96219CEB2A3B1206005FDEB8 /* App-Wecker-v4 */;
+			targetProxy = 96219CFD2A3B1208005FDEB8 /* PBXContainerItemProxy */;
+		};
+		96219D082A3B1208005FDEB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96219CEB2A3B1206005FDEB8 /* App-Wecker-v4 */;
+			targetProxy = 96219D072A3B1208005FDEB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		96219D0E2A3B1208005FDEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96219D0F2A3B1208005FDEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96219D112A3B1208005FDEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"App-Wecker-v4/Preview Content\"";
+				DEVELOPMENT_TEAM = 4JF7PH4AG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nb.App-Wecker-v4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96219D122A3B1208005FDEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"App-Wecker-v4/Preview Content\"";
+				DEVELOPMENT_TEAM = 4JF7PH4AG8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nb.App-Wecker-v4";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96219D142A3B1208005FDEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JF7PH4AG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nb.App-Wecker-v4Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App-Wecker-v4.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/App-Wecker-v4";
+			};
+			name = Debug;
+		};
+		96219D152A3B1208005FDEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JF7PH4AG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nb.App-Wecker-v4Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App-Wecker-v4.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/App-Wecker-v4";
+			};
+			name = Release;
+		};
+		96219D172A3B1208005FDEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JF7PH4AG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nb.App-Wecker-v4UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "App-Wecker-v4";
+			};
+			name = Debug;
+		};
+		96219D182A3B1208005FDEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JF7PH4AG8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nb.App-Wecker-v4UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "App-Wecker-v4";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96219CE72A3B1206005FDEB8 /* Build configuration list for PBXProject "App-Wecker-v4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96219D0E2A3B1208005FDEB8 /* Debug */,
+				96219D0F2A3B1208005FDEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96219D102A3B1208005FDEB8 /* Build configuration list for PBXNativeTarget "App-Wecker-v4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96219D112A3B1208005FDEB8 /* Debug */,
+				96219D122A3B1208005FDEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96219D132A3B1208005FDEB8 /* Build configuration list for PBXNativeTarget "App-Wecker-v4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96219D142A3B1208005FDEB8 /* Debug */,
+				96219D152A3B1208005FDEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96219D162A3B1208005FDEB8 /* Build configuration list for PBXNativeTarget "App-Wecker-v4UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96219D172A3B1208005FDEB8 /* Debug */,
+				96219D182A3B1208005FDEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96219CE42A3B1206005FDEB8 /* Project object */;
+}

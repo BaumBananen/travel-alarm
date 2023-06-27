@@ -14,6 +14,9 @@
 		96219D012A3B1208005FDEB8 /* App_Wecker_v4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219D002A3B1208005FDEB8 /* App_Wecker_v4Tests.swift */; };
 		96219D0B2A3B1208005FDEB8 /* App_Wecker_v4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219D0A2A3B1208005FDEB8 /* App_Wecker_v4UITests.swift */; };
 		96219D0D2A3B1208005FDEB8 /* App_Wecker_v4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219D0C2A3B1208005FDEB8 /* App_Wecker_v4UITestsLaunchTests.swift */; };
+		96219D1A2A3B1270005FDEB8 /* mapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219D192A3B1270005FDEB8 /* mapAPI.swift */; };
+		96219D1C2A3B1285005FDEB8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219D1B2A3B1285005FDEB8 /* LocationManager.swift */; };
+		96219D1E2A3B1489005FDEB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96219D1D2A3B1489005FDEB8 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		96219D062A3B1208005FDEB8 /* App-Wecker-v4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App-Wecker-v4UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96219D0A2A3B1208005FDEB8 /* App_Wecker_v4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Wecker_v4UITests.swift; sourceTree = "<group>"; };
 		96219D0C2A3B1208005FDEB8 /* App_Wecker_v4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Wecker_v4UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96219D192A3B1270005FDEB8 /* mapAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapAPI.swift; sourceTree = "<group>"; };
+		96219D1B2A3B1285005FDEB8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		96219D1D2A3B1489005FDEB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96219D1F2A3B14B2005FDEB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +81,7 @@
 		96219CE32A3B1206005FDEB8 = {
 			isa = PBXGroup;
 			children = (
+				96219D1D2A3B1489005FDEB8 /* AppDelegate.swift */,
 				96219CEE2A3B1206005FDEB8 /* App-Wecker-v4 */,
 				96219CFF2A3B1208005FDEB8 /* App-Wecker-v4Tests */,
 				96219D092A3B1208005FDEB8 /* App-Wecker-v4UITests */,
@@ -94,7 +102,10 @@
 		96219CEE2A3B1206005FDEB8 /* App-Wecker-v4 */ = {
 			isa = PBXGroup;
 			children = (
+				96219D1F2A3B14B2005FDEB8 /* Info.plist */,
 				96219CEF2A3B1206005FDEB8 /* App_Wecker_v4App.swift */,
+				96219D192A3B1270005FDEB8 /* mapAPI.swift */,
+				96219D1B2A3B1285005FDEB8 /* LocationManager.swift */,
 				96219CF12A3B1206005FDEB8 /* ContentView.swift */,
 				96219CF32A3B1207005FDEB8 /* Assets.xcassets */,
 				96219CF52A3B1207005FDEB8 /* Preview Content */,
@@ -257,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96219D1C2A3B1285005FDEB8 /* LocationManager.swift in Sources */,
 				96219CF22A3B1206005FDEB8 /* ContentView.swift in Sources */,
+				96219D1A2A3B1270005FDEB8 /* mapAPI.swift in Sources */,
+				96219D1E2A3B1489005FDEB8 /* AppDelegate.swift in Sources */,
 				96219CF02A3B1206005FDEB8 /* App_Wecker_v4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,23 +428,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"App-Wecker-v4/Preview Content\"";
 				DEVELOPMENT_TEAM = 4JF7PH4AG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "App-Wecker-v4/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Travel Alarm";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "needs your location always and when in use";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "needs your location always";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "needs your location when in use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nb.App-Wecker-v4";
+				PRODUCT_BUNDLE_IDENTIFIER = "nb.travel-alarm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -443,23 +465,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"App-Wecker-v4/Preview Content\"";
 				DEVELOPMENT_TEAM = 4JF7PH4AG8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "App-Wecker-v4/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Travel Alarm";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "needs your location always and when in use";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "needs your location always";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "needs your location when in use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "nb.App-Wecker-v4";
+				PRODUCT_BUNDLE_IDENTIFIER = "nb.travel-alarm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

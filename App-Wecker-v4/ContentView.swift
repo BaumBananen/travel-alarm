@@ -13,19 +13,19 @@ struct ContentView: View {
     @State private var notifyDistance=500 //Abstand bei dem benachrichtigt wird
     @State public var destinationCoords: CLLocation?
     @State private var destinationName: String?
-    @State private var distanceDestination: CLLocationDistance? //speichert den Abstand vom Ziel
-    @StateObject private var mapAPI = MapAPI()
-    @State private var text = ""
-    @State private var currentMapCoords: CLLocationCoordinate2D?
-    @State private var currentMapRegion = MKCoordinateRegion(center:CLLocationCoordinate2D(latitude: 0, longitude: 0), span: MKCoordinateSpan(latitudeDelta: CLLocationDegrees(2.8*Double(500)/110574), longitudeDelta: CLLocationDegrees(2.8*Double(500)/110574))) //damit die Map am Ende verschiebbar ist
-    @State private var selecting=false
-    @State private var statusText = "enter approximate Location, then press Search"
-    @State private var tracking = false
-    @FocusState private var addressFinderIsFocused: Bool//um das keyboard zu schließen, https://www.hackingwithswift.com/quick-start/swiftui/how-to-dismiss-the-keyboard-for-a-textfieldö_-_
-    let locationManager = LocationManager()
+    @State private var distanceDestination: CLLocationDistance? //speichert den aktuellen Abstand vom Ziel
+    @StateObject private var mapAPI = MapAPI() //Objekt der API, um darauf zuzugreifen
+    @State private var text = "" //Text im Textfeld
+    @State private var currentMapCoords: CLLocationCoordinate2D? //der Standort des Pins auf der Map
+    @State private var currentMapRegion = MKCoordinateRegion(center:CLLocationCoordinate2D(latitude: 0, longitude: 0), span: MKCoordinateSpan(latitudeDelta: CLLocationDegrees(2.8*Double(500)/110574), longitudeDelta: CLLocationDegrees(2.8*Double(500)/110574))) //damit die Map am Ende verschiebbar ist, speichert die aktuelle Region, also Ansicht, der Map
+    @State private var selecting=false //ob der Nutzer gerade das Ziel auf der Karte auswählen soll
+    @State private var statusText = "enter approximate Location, then press Search" //Tutorial
+    @State private var tracking = false //ob schon ein Ziel ausgewählt wurde
+    @FocusState private var addressFinderIsFocused: Bool //ob das Textfeld gerade offen ist, um das keyboard zu schließen wenn der Nutzer auf search tippt https://www.hackingwithswift.com/quick-start/swiftui/how-to-dismiss-the-keyboard-for-a-textfieldö_-_
+    let locationManager = LocationManager() //Objekt LocationManager, gibt den Standort des Nutzers weiter
 
     var body: some View {
-        VStack{
+        VStack{ //vertical stack, Main View der App
             VStack{
                 Text("Travel Alarm")
                     .font(.largeTitle)
@@ -49,20 +49,25 @@ struct ContentView: View {
                     statusText = "loading"
                     self.tracking=false
                     addressFinderIsFocused=false
-                    
-
                 }
                 else{
                     statusText="try something longer"
                 }
             }
-            if(mapAPI.hasCorrectLocation){
+            if(mapAPI.hasCorrectLocation){ //beginnt das Auswählen, sobald die API ein Ziel zurückgegeben hat
                 Text("location found")
                     .onAppear{
                         selecting=true
                         statusText="move pin to desired destination, then press select"
                     }
             }
+            if(mapAPI.failed){ //wenn die API das Ziel nicht findet, wird das angezeigt
+                Text("Suche fehlgeschlagen :(")
+                    .onAppear{
+                        statusText="try another location"
+                    }
+            }
+            
             if(selecting){
                 Button("select"){
                     destinationName = mapAPI.locations[0].name
@@ -76,13 +81,7 @@ struct ContentView: View {
                     self.currentMapRegion=MKCoordinateRegion(center:currentMapCoords!, span: MKCoordinateSpan(latitudeDelta: CLLocationDegrees(2.8*Double(notifyDistance)/110574), longitudeDelta: CLLocationDegrees(2.8*Double(notifyDistance)/110574))) //setzt die neue Map auf die Region
                 }
             }
-            if(mapAPI.failed){
-                Text("Suche fehlgeschlagen :(")
-                    .onAppear{
-                        statusText="try another location"
-                    }
-            }
-            if(selecting&&addressFinderIsFocused==false){
+            if(selecting&&addressFinderIsFocused==false){ //zeigt die Karte zum Auswählen des genauen Ziels an, wenn der Nutzer gerade das Ziel auswählen soll und das Textfeld nicht ausgewählt ist
                 Map(coordinateRegion: $mapAPI.region, showsUserLocation: true, annotationItems: mapAPI.locations) {
                     location in MapMarker(coordinate: mapAPI.region.center, tint: .blue)
                 }
@@ -90,11 +89,11 @@ struct ContentView: View {
                 .frame(width: 400, height: 400)
             }
             
-            if((currentMapCoords != nil)&&addressFinderIsFocused==false){
+            if((currentMapCoords != nil)&&addressFinderIsFocused==false){ //zeigt die Karte, wenn ein Ziel festgelegt ist und das Textfeld nicht ausgewählt ist
                 ZStack{
                     Map(coordinateRegion: $currentMapRegion, showsUserLocation: true, annotationItems: [Location(name: "", coordinate: CLLocationCoordinate2D(latitude: currentMapCoords!.latitude, longitude: currentMapCoords!.longitude))]) {location in MapMarker(coordinate: location.coordinate, tint: .blue)}
                         .frame(width: 400, height: 400)
-                    if(currentMapRegion.center.latitude==currentMapCoords?.latitude&&currentMapRegion.center.longitude==currentMapCoords?.longitude){
+                    if(currentMapRegion.center.latitude==currentMapCoords?.latitude&&currentMapRegion.center.longitude==currentMapCoords?.longitude){ //zeigt den Zielbereich, wennn der Pin in der Mitte der Ansicht ist
                         Circle()
                             .strokeBorder(.red, lineWidth: 2)
                             .frame(width: 2*400/2.8, height: 2*400/2.8)
@@ -186,25 +185,23 @@ struct ContentView: View {
                     Text("disable notification")
                 })
                 
-            } label: {
+            } label: { //Auswahl der notifyDistance
                 Label(
                     title: {Text("select distance (\(notifyDistance)m)")},
                     icon: {Image(systemName: "plus")}
                 )
             }
-            if(destinationName != nil){
+            if(destinationName != nil){ //zeigt aktuelle Distanz zum Ziel an, sobald ein Ziel gewählt wurde
                 Text("\((Int(distanceDestination ?? 0)))m away from "+(destinationName ?? "no destination selected"))
                     .onAppear {
-                        // Set up location updates
+                        //Set up location updates
                         locationManager.onLocationUpdate = { location in
-                            // Calculate distance to destination
                             if(destinationCoords != nil){
-                                
-                                // Update state with the distance
+                                //Update state with the distance
                                 distanceDestination=location.distance(from: destinationCoords!)
-                                //send notification
-                                if((Int(distanceDestination!))<notifyDistance){//prev distanceDest
-                                    if(distanceDestination != 0){//prev distanceDest
+                                //send notification, if close enough
+                                if((Int(distanceDestination!))<notifyDistance){
+                                    if(distanceDestination != 0){
                                         let content = UNMutableNotificationContent()
                                         content.title = "You're close"
                                         content.body = "\(Int(distanceDestination!))m away from "+destinationName!
@@ -232,7 +229,7 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider { //damit man in Xcode den Code live previewen kann
     static var previews: some View {
         ContentView()
     }

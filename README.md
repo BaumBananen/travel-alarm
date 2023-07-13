@@ -1,0 +1,2 @@
+# travel-alarm
+Did you ever want to sleep on the train but were scared to miss your station? Did you ever stand for minutes in a long-distance train because you thought it would arrive soon and need to leave but it took longer? With travel alarm, you can enter a destination and a radius, and the app will notify you when getting close. Also useful for not missing a transfer in an unknown public transit systems or other distance calculations.
